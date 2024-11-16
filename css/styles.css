@@ -1,0 +1,426 @@
+
+/* --------------------------------------ESTILOS GENERALES-------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/img/logo.png'); 
+    background-size: cover;
+    background-position: center -50%; 
+    background-attachment: fixed; 
+    color: #f0f0f0;  
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 98%; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);  
+}
+
+/* Estilo para el título Aeternus */
+.page-title h1 {
+    font-family: 'Cinzel Decorative', serif; 
+    font-size: 40px; 
+    letter-spacing: 5px; 
+    color: #c0a16b; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul { 
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li { 
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover { 
+    color: #c0a16b;  
+    text-decoration: underline;
+}
+
+/* --------------------------------------SECCIÓN DE INICIO-------------------------------------------*/
+main {
+    padding: 40px 30px;
+}
+
+.intro {
+    font-family: 'Cinzel Decorative', serif;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 50px;
+    color: #c0a16b;
+    margin-bottom: 20px;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: nowrap; 
+
+}
+
+.left-text {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 45px;
+    line-height: 1.2;
+    max-width: 250px;
+    margin-left: 30px;
+    text-align: center;
+    flex-shrink: 0; 
+
+}
+
+.right-text {
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 300px; 
+    margin-right: 30px; 
+    text-align: justify;
+    flex-shrink: 0; 
+
+}
+
+.right-content {
+    margin-top: -20px; 
+    margin-left: auto;
+    margin-right: 30px;
+    max-width: 300px;
+}
+
+.right-title {
+    font-family: 'Cinzel Decorative', serif; 
+    font-size: 18px;
+    color: #c0a16b;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.right-text {
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --------------------------------------SECCIÓN DE PRODUCTOS-------------------------------------------*/
+
+#productos {
+    padding: 50px;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #c0a16b;
+    margin-bottom: 20px;
+}
+
+#productos p {
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+/* Estilo para el contenedor de productos */
+.productos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;  
+    margin-top: 30px;  
+    margin-bottom: 30px;  
+    flex-wrap: wrap;  
+}
+
+/* Estilo para cada producto */
+.producto-item {
+    width: 20%;  
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
+
+/* Estilo para las imágenes de los productos */
+.producto-imagen {
+    width: 100%;  
+    height: auto;
+    border-radius: 8px;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);  
+}
+
+/* Estilo para la información del producto (nombre y precio) */
+.producto-info {
+    margin-top: 10px;  
+}
+
+/* Estilo para los nombres de los productos */
+.producto-nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 5px 0;  
+    color: #c0a16b; 
+}
+
+/* Estilo para los precios de los productos */
+.producto-precio {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c0a16b;  
+}
+
+/* --------------------------------------SECCIÓN DE RESEÑAS-------------------------------------------*/
+#reseñas {
+    padding: 50px;
+    padding-top: 100px; 
+
+}
+
+#reseñas h2 {
+    font-size: 28px;
+    color: #c0a16b;
+    margin-bottom: 20px;
+}
+
+#reseñas p {
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+/* Contenedor para las reseñas */
+.reseñas-container {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;  
+    flex-wrap: wrap;  
+    margin-top: 30px; 
+}
+
+/* Recuadros para las reseñas */
+.reseñas-container {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;  
+    flex-wrap: wrap;  
+    margin-top: 30px; 
+    flex-direction: row; 
+}
+
+/* Recuadros para las reseñas */
+.recuadro {
+    background-color: rgba(255, 255, 255, 0.5);  
+    border: 2px solid #c0a16b;  
+    border-radius: 10px;  
+    padding: 15px;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  
+    max-width: 300px;  
+    font-family: 'Cinzel Decorative', serif;  
+    flex: 1 1 30%;  
+    box-sizing: border-box; 
+    color: #c0a16b;  
+    text-align: center;  
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center;  
+}
+
+/* Para el nombre de la persona en la reseña */
+.nombre-persona {
+    font-weight: bold;  
+    font-size: 1.2em; 
+    margin-bottom: 10px;  
+}
+
+/* Para el texto de la reseña */
+.texto-reseña {
+    font-size: 1em;  
+}
+
+
+/* Asegúrate de que los recuadros tengan espacio adecuado y no se desborden */
+.recuadro {
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/* --------------------------------------SECCIÓN DE CONTACTO-------------------------------------------*/
+
+#contacto {
+    background-color: #1f1f1f;
+    padding: 20px; 
+    padding-top: 30px; 
+    margin-top: 20px; 
+    text-align: center;
+    max-width: 400px; 
+    margin: 200px auto; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 350px; 
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #c0a16b;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #a38453;
+}
+
+/* --------------------------------------SECCIÓN DEL FOOTER-------------------------------------------*/
+
+footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #1a1a1a; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    z-index: 1000; 
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* --------------------------------------ADAPTACIONES MOVILES-------------------------------------------*/
+
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 10px 20px; 
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .page-title h1 {
+        font-size: 20px; 
+        letter-spacing: 2px;
+        text-align: center; 
+
+    }
+
+    /* Navigation */
+    nav ul {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    nav ul li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    /* Sección de inicio */
+    .intro h2 {
+        font-size: 10px; 
+    }
+
+    .text-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+    }
+
+    .left-text, .right-text {
+        font-size: 20px;
+        max-width: 100%; 
+        margin: 0;
+        text-align: center; 
+    }
+
+    .right-content {
+        margin: 0; 
+        max-width: 100%; 
+    }
+
+    /* Sección de productos */
+    #productos {
+        padding: 20px;
+    }
+
+    .productos-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .producto-item {
+        width: 80%; 
+        margin-bottom: 20px; 
+
+    /* Sección de reseñas */
+    .reseñas-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .recuadro {
+        width: 90%;  
+        margin-bottom: 20px;  
+
+    /* Sección de contacto */
+    #contacto {
+        padding: 20px;
+        margin-top: 20px; 
+        width: 90%; 
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    form input, form textarea {
+        width: 100%; 
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px 20px; 
+        font-size: 12px;  
+    }
+}
